@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- for azure:  all these links must use https, not http -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8"> 
+  <title>My First jQuery Mobile Application</title>
+  <link rel="stylesheet" type="text/css" href="https://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css"/>
+  <script src="https://code.jquery.com/jquery-1.8.2.min.js"> </script>
+  <script src="https://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+  <script src="/main.js"></script>
+ </head>
+
+ <body>
+
+<div data-role="page" id="Home">
+
+   <div data-role="header" data-theme='b'> 
+      <h1>Log Your Runs!</h1>
+      <div data-role="navbar">
+         <ul>
+               <li><a href="#AddRun" data-icon="plus">Add New Run</a> </li>
+               <li><a href="#View" data-icon="bars">View My Runs</a> </li>
+               <li><a href="#MyPersonalRecords" data-icon="star">My Personal Records</a> </li>
+         </ul>
+      </div><!-- /navbar -->
+   </div>
+
+   <div data-role="content" data-theme='c'>
+      <h2>Log Your Runs! 🏃🏼‍♀️</h2>
+      <div>
+          Use this app to add completed runs, view your running schedule, and keep track of your personal records!
+      </div>
+   </div>
+
+   <div data-role="footer" data-theme='b'>
+      <h1>Copywrite Stephanie McGinty 2020</h1>
+   </div>
+
+</div>
+
+<div data-role="page" id="AddRun">
+
+   <div data-role="header" data-theme='b'> 
+      <h1>Log Your Runs!</h1>
+      <div data-role="navbar">
+            <ul>
+                  <li><a href="#Home" data-icon="home">Home Page</a></li>
+                  <li><a href="#View" data-icon="bars">View My Runs</a> </li>
+                  <li><a href="#MyPersonalRecords" data-icon="star">My Personal Records</a> </li>
+            </ul>
+         </div><!-- /navbar -->
+   </div>
+
+   <div data-role="content" data-theme='c'>
+     <h2>Add a New Run</h2>
+     <div>
+        User enters...<br><br>
+        <form action="">
+         <label for="date">Date of run:</label>
+         <input type="text" id="date" name="date"><br><br>
+         <label for="time">Time spent running:</label>
+         <input type="text" id="time" name="time"><br><br>
+         <label for="miles">Miles completed:</label>
+         <input type="text" id="miles" name="miles"><br><br>
+         <label for="notes">Notes:</label>
+         <input type="text" id="notes" name="notes"><br><br>
+         <input type="button" id="add_run" value="Add run">
+         <input type="button" id="clear" value="Clear">
+       </form>
+     </div>
+   </div>
+
+   <div data-role="footer" data-theme='b'>
+      <h1>Copywrite Stephanie McGinty 2020</h1>
+   </div>
+
+</div>
+
+<div data-role="page" id="View">
+
+            <div data-role="header" data-theme='b'> 
+            <h1>View My Completed Runs</h1>
+               <div data-role="navbar">
+                     <ul>
+                        <li><a href="#Home" data-icon="home">Home Page</a></li>
+                        <li><a href="#AddRun" data-icon="plus">Add New Run</a> </li>
+                        <li><a href="#MyPersonalRecords" data-icon="star">My Personal Records</a> </li>
+                                       </ul>
+                  </div><!-- /navbar -->
+            </div>
+    
+            <div data-role="content" data-theme='c'>
+               <h2>View My Runs</h2>
+   
+               <div>
+               Runs listed in descending chronological order with checkbox next to each giving option to select run and delete
+               (or delete button next to each entry)
+               <br><br>
+               Example:
+               <form>
+               <div>
+                  <input type="checkbox" name="delete" id="run1">
+                  <label for="run1">5/10: 30 min, 3 miles, easy run</label>
+                  <input type="checkbox" name="delete" id="run2">
+                  <label for="run2">5/8: 16 min, 2 miles, quicker pace</label>
+                </div>
+               <div>
+               <button type="submit">Click here to delete a run</button>
+               </div>
+               </form>
+               </div>
+            </div>
+            <div data-role="footer"  data-theme='b'>
+                <h1>Copywrite Stephanie McGinty 2020</h1>
+            </div>
+    
+</div>
+
+<div data-role="page" id="MyPersonalRecords">
+
+   <div data-role="header" data-theme='b'> 
+   <h1>My Personal Records</h1>
+      <div data-role="navbar">
+            <ul>
+               <li><a href="#Home" data-icon="home">Home Page</a></li>
+               <li><a href="#AddRun" data-icon="plus">Add New Run</a> </li>
+               <li><a href="#View" data-icon="bars">View My Runs</a> </li></ul>
+                            
+         </div><!-- /navbar -->
+   </div>
+
+   <div data-role="content" data-theme='c'>
+      <h2>My Personal Records 🏆</h2>
+      <div>
+         <strong>Time:</strong>
+         <br>
+         Top 3 times are listed here
+         <br><br>
+         <strong>Distance:</strong>
+         <br>
+         Top 3 highest mile runs are listed here
+      </div>
+   </div>
+   <div data-role="footer" data-theme='b'>
+       <h1>Copywrite Stephanie McGinty 2020</h1>
+   </div>
+
+</div>
+
+
+ </body>
+ </html> 
