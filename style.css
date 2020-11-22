@@ -1,4 +1,6 @@
-/*Downloaded from https://www.codeseek.co/RobVermeer/tinder-swipe-cards-japZpY */
+#starfrags{
+  display: none;
+}
 *, *:before, *:after {
   box-sizing: border-box;
   padding: 0;
@@ -11,7 +13,7 @@ body {
   font-family: sans-serif;
 }
 
-.tinder {
+.bingo {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -22,11 +24,11 @@ body {
   transition: opacity 0.1s ease-in-out;
 }
 
-.loaded.tinder {
+.loaded.bingo {
   opacity: 1;
 }
 
-.tinder--status {
+.bingo--status {
   position: absolute;
   top: 50%;
   margin-top: -30px;
@@ -36,7 +38,7 @@ body {
   pointer-events: none;
 }
 
-.tinder--status i {
+.bingo--status i {
   font-size: 100px;
   opacity: 0;
   -webkit-transform: scale(0.3);
@@ -47,19 +49,15 @@ body {
   margin-left: -50px;
 }
 
-.tinder_love .fa-heart {
-  opacity: 0.7;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+.bingo_love .fa-heart {
+
 }
 
-.tinder_nope .fa-remove {
-  opacity: 0.7;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+.bingo_nope .fa-remove {
+
 }
 
-.tinder--cards {
+.bingo--cards {
   flex-grow: 1;
   padding-top: 40px;
   text-align: center;
@@ -69,9 +67,8 @@ body {
   z-index: 1;
 }
 
-.tinder--card {
+.bingo--card {
   display: inline-block;
-  width: 90vw;
   max-width: 400px;
   height: 70vh;
   background: #FFFFFF;
@@ -85,54 +82,45 @@ body {
   cursor: grab;
 }
 
-.moving.tinder--card {
+.moving.bingo--card {
   transition: none;
   cursor: -webkit-grabbing;
   cursor: grabbing;
 }
 
-.tinder--card img {
-  max-width: 100%;
+.bingo--card img {
+  max-width: 75%;
   pointer-events: none;
 }
 
-.tinder--card h3 {
+.bingo--card h3 {
   margin-top: 32px;
   font-size: 32px;
   padding: 0 16px;
   pointer-events: none;
 }
 
-.tinder--card p {
+.bingo--card p {
   margin-top: 24px;
   font-size: 20px;
   padding: 0 16px;
   pointer-events: none;
 }
 
-.tinder--buttons {
-  flex: 0 0 100px;
-  text-align: center;
-  padding-top: 20px;
+.bingo--buttons {
+
 }
 
-.tinder--buttons button {
-  border-radius: 50%;
-  line-height: 60px;
-  width: 60px;
-  border: 0;
-  background: #FFFFFF;
-  display: inline-block;
-  margin: 0 8px;
+.bingo--buttons button {
+ 
 }
 
-.tinder--buttons button:focus {
-  outline: 0;
+.bingo--buttons button:focus {
+
 }
 
-.tinder--buttons i {
-  font-size: 32px;
-  vertical-align: middle;
+.bingo--buttons i {
+  
 }
 
 .fa-heart {
